@@ -516,7 +516,7 @@ header .wrapper {
   height: 150px;
   background-image: url(../assets/wave.svg);
   background-size: 100% 150px;
-  background-color: #fff5f5;
+  background-color: blue;
   display: inline-block;
   background-repeat: no-repeat;
 }
@@ -590,6 +590,105 @@ header .wrapper {
   background-color: #fff;
   padding: 60px;
   text-align: center;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 90px 0;
+}
+
+input,
+textarea {
+  border: none;
+  font-family: "Jakarta Sans";
+  color: #333;
+  padding: 0 0 10px 5px;
+  margin-bottom: 40px;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2;
+}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2;
+}
+input::placeholder,
+textarea::placeholder {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #084b6d;
+  opacity: 1;
+  line-height: 1.2;
+}
+input:focus,
+textarea:focus {
+  border-bottom: 1px solid #084b6d;
+  outline: none;
+}
+
+input {
+  border-bottom: 1px solid #eee;
+}
+
+textarea {
+  border: 1px solid #eee;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  font-family: "Jakarta Sans";
+  color: #084b6d;
+  background-color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #eee;
+  background-image: url(../assets/caret-down-solid.svg);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+}
+fieldset label {
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+fieldset input {
+  accent-color: #084b6d;
 }
 
 footer {

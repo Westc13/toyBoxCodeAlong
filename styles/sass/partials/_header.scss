@@ -38,7 +38,7 @@ header .wrapper {
     // border: 2px solid red;
     background-image: url(../assets/wave.svg);
     background-size: 100% 150px; //can also use 100% to represent height is the same of the empty content
-    background-color: $quaternary;
-    display: inline-block; //try block display because there is a small space difference between inline-block and block
+    background-color: blue;
+    display: inline-block; //try block display because there is a small space difference between inline-block and block; inline-block created a thin line under the border of the wave
     background-repeat: no-repeat;
 }
