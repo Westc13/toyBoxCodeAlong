@@ -15,3 +15,30 @@ header .wrapper {
 .textContainer {
     width: 48%;
 }
+
+// Contact page header style
+.contactHeader {
+    background-color: $quaternary;
+    padding-top: 120px;
+}
+
+.contactHeader .wrapper {
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+// Add wavey bottom
+.contactHeader::after {
+    content: ''; 
+    //passing a empty '' element is like a div with no content, pseudo elements are inline by default, is considered either the first (before) or last (after) child of the parent element
+    width: 100%;
+    height: 150px;
+    // display: inline-block;
+    // border: 2px solid red;
+    background-image: url(../assets/wave.svg);
+    background-size: 100% 150px; //can also use 100% to represent height is the same of the empty content
+    background-color: $quaternary;
+    display: inline-block; //try block display because there is a small space difference between inline-block and block
+    background-repeat: no-repeat;
+}
